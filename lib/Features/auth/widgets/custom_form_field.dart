@@ -8,14 +8,17 @@ class CustomFormField extends StatelessWidget {
     this.radius = 20,
     required this.texthint,
     this.scure = false,
+    this.keyboard,
   });
   final double radius;
   final String texthint;
   final bool scure;
+  final TextInputType? keyboard;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       obscureText: scure,
+      keyboardType: keyboard,
       decoration: InputDecoration(
         hint: Text(texthint),
 

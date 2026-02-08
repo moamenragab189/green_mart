@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:green_mart/Core/constants/app_assets.dart';
+import 'package:green_mart/Core/functions/navigation.dart';
 import 'package:green_mart/Core/stayels/app_colors.dart';
 import 'package:green_mart/Core/stayels/text_styles.dart';
 import 'package:green_mart/Core/widgets/custom_svg.dart';
 import 'package:green_mart/Core/widgets/main_custom_button.dart';
+import 'package:green_mart/Features/auth/pages/number.dart';
 import 'package:green_mart/Features/auth/widgets/custom_form_field.dart';
 
 class SignUp extends StatelessWidget {
@@ -43,7 +45,12 @@ class SignUp extends StatelessWidget {
               SizedBox(
                 height: 60,
                 width: double.infinity,
-                child: MainCustomButton(text: 'Sign Up', onpress: () {}),
+                child: MainCustomButton(
+                  text: 'Sign Up',
+                  onpress: () {
+                    push(context, Number());
+                  },
+                ),
               ),
               SizedBox(height: 25),
               Row(
