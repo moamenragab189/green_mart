@@ -43,30 +43,13 @@ lib/
 ## 📸 Screenshots
 
 > Screenshots of the application UI.
+<p align="center">
+  <img src="screenshots/splash.png" width="250" />
+  <img src="screenshots/welcom.png" width="250" />
+</p>
+<p align="center">
+  <img src="screenshots/login.png" width="250" />
+    <img src="screenshots/signup.png" width="250" />
+</p>
 
-```
-assets/screenshots/
-│── screen_1.png
-│── screen_2.png
-│── screen_3.png
-```
-
-```md
-![App Screenshot](assets/screenshots/screen_1.png)
-![App Screenshot](assets/screenshots/screen_2.png)
-```
-
----
-
-## 📝 Notes
-
-* The project is under active development
-* New features and screens are added continuously
-* Structure is designed for long-term scalability
-
----
-
-## 👤 Author
-
-**Moamen Ragab**
 
