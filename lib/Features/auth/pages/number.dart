@@ -5,7 +5,7 @@ import 'package:green_mart/Core/stayels/app_colors.dart';
 import 'package:green_mart/Core/stayels/text_styles.dart';
 import 'package:green_mart/Core/widgets/main_custom_button.dart';
 import 'package:green_mart/Features/auth/pages/verification.dart';
-import 'package:green_mart/Features/auth/widgets/custom_form_field.dart';
+import 'package:green_mart/Core/widgets/custom_form_field.dart';
 
 class Number extends StatelessWidget {
   const Number({super.key});
@@ -38,7 +38,7 @@ class Number extends StatelessWidget {
                 child: MainCustomButton(
                   text: 'Next',
                   onpress: () {
-                    push(context, Verification());
+                    pushReplacment(context, Verification());
                   },
                 ),
               ),

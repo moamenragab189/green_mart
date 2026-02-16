@@ -30,7 +30,7 @@ class WelcomScreen extends StatelessWidget {
             right: 30,
             child: Column(
               children: [
-                CustomSvg(path: AppAssets.carrotSvg, color: Colors.white),
+                CustomSvg(path: AppAssets.logoSvg, color: Colors.white),
                 SizedBox(height: 35),
                 Text(
                   'welcom\nto our store',
@@ -51,7 +51,7 @@ class WelcomScreen extends StatelessWidget {
                     textstyle: TextStyles.button.copyWith(color: Colors.white),
                     text: 'Get Started',
                     onpress: () {
-                      push(context, Login());
+                      pushReplacment(context, Login());
                     },
                   ),
                 ),

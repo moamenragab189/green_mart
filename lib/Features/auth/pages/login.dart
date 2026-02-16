@@ -7,7 +7,7 @@ import 'package:green_mart/Core/stayels/text_styles.dart';
 import 'package:green_mart/Core/widgets/custom_svg.dart';
 import 'package:green_mart/Core/widgets/main_custom_button.dart';
 import 'package:green_mart/Features/auth/pages/signup.dart';
-import 'package:green_mart/Features/auth/widgets/custom_form_field.dart';
+import 'package:green_mart/Core/widgets/custom_form_field.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -56,7 +56,7 @@ class Login extends StatelessWidget {
                 child: MainCustomButton(
                   text: 'Login',
                   onpress: () {
-                    push(context, SignUp());
+                    pushReplacment(context, SignUp());
                   },
                 ),
               ),

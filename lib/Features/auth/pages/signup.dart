@@ -7,7 +7,7 @@ import 'package:green_mart/Core/stayels/text_styles.dart';
 import 'package:green_mart/Core/widgets/custom_svg.dart';
 import 'package:green_mart/Core/widgets/main_custom_button.dart';
 import 'package:green_mart/Features/auth/pages/number.dart';
-import 'package:green_mart/Features/auth/widgets/custom_form_field.dart';
+import 'package:green_mart/Core/widgets/custom_form_field.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
@@ -48,7 +48,7 @@ class SignUp extends StatelessWidget {
                 child: MainCustomButton(
                   text: 'Sign Up',
                   onpress: () {
-                    push(context, Number());
+                    pushReplacment(context, Number());
                   },
                 ),
               ),

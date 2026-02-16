@@ -9,19 +9,24 @@ class CustomFormField extends StatelessWidget {
     required this.texthint,
     this.scure = false,
     this.keyboard,
+    this.prefixIcon,
+    this.enabled = true,
   });
   final double radius;
   final String texthint;
   final bool scure;
   final TextInputType? keyboard;
+  final IconData? prefixIcon;
+  final bool enabled;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      enabled: enabled,
       obscureText: scure,
       keyboardType: keyboard,
       decoration: InputDecoration(
         hint: Text(texthint),
-
+        prefixIcon: prefixIcon == null ? null : Icon(prefixIcon),
         filled: true,
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: AppColor.borderform),
@@ -38,6 +43,10 @@ class CustomFormField extends StatelessWidget {
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(radius),
           borderSide: BorderSide(color: AppColor.error),
+        ),
+        disabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(radius),
+          borderSide: BorderSide(color: AppColor.borderform),
         ),
       ),
     );

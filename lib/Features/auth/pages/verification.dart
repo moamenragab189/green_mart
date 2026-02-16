@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:green_mart/Core/functions/navigation.dart';
 import 'package:green_mart/Core/stayels/app_colors.dart';
 import 'package:green_mart/Core/stayels/text_styles.dart';
 import 'package:green_mart/Core/widgets/main_custom_button.dart';
-import 'package:green_mart/Features/auth/widgets/custom_form_field.dart';
+import 'package:green_mart/Features/Main/Main_Screen.dart';
+import 'package:green_mart/Core/widgets/custom_form_field.dart';
 import 'package:pinput/pinput.dart';
 
 class Verification extends StatelessWidget {
@@ -62,7 +64,12 @@ class Verification extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 height: 56,
-                child: MainCustomButton(text: 'Next', onpress: () {}),
+                child: MainCustomButton(
+                  text: 'Next',
+                  onpress: () {
+                    pushReplacment(context, MainScreen());
+                  },
+                ),
               ),
               SizedBox(height: 24),
               Center(
