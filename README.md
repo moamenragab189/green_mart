@@ -51,5 +51,13 @@ lib/
   <img src="screenshots/login.png" width="250" />
     <img src="screenshots/signup.png" width="250" />
 </p>
+<p align="center">
+  <img src="screenshots/number.png" width="250" />
+  <img src="screenshots/verifivcation.png" width="250" />
+</p>
+<p align="center">
+  <img src="screenshots/Home.png" width="250" />
+  
+</p>
 
 
