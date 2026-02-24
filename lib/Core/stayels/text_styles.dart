@@ -17,6 +17,11 @@ class TextStyles {
     color: AppColor.background,
     fontSize: 14,
   );
+  static const TextStyle title2 = TextStyle(
+    color: AppColor.background,
+    fontWeight: FontWeight.w600,
+    fontSize: 18,
+  );
   static const TextStyle body = TextStyle(
     color: AppColor.background,
     fontSize: 16,
@@ -26,5 +31,10 @@ class TextStyles {
     color: Colors.white,
     fontWeight: FontWeight.w600,
     fontSize: 16,
+  );
+  static const TextStyle body2 = TextStyle(
+    color: Colors.white,
+    fontWeight: FontWeight.w400,
+    fontSize: 12,
   );
 }

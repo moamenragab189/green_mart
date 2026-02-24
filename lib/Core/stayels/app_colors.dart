@@ -8,4 +8,5 @@ class AppColor {
   static const Color background = Colors.black;
   static const Color borderform = Color(0xffF0F1F2);
   static const Color error = Colors.red;
+  static const Color divider = Color(0xFFE2E2E2B2);
 }
