@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:green_mart/Core/constants/app_assets.dart';
 import 'package:green_mart/Core/stayels/app_colors.dart';
 import 'package:green_mart/Core/stayels/text_styles.dart';
-import 'package:green_mart/Core/widgets/custom_form_field.dart';
+
 import 'package:green_mart/Core/widgets/custom_svg.dart';
+import 'package:green_mart/Features/home/data/Product_model.dart';
 import 'package:green_mart/Features/home/widgets/custom_list_view.dart';
-import 'package:green_mart/Features/home/widgets/home_search_bar.dart';
+import 'package:green_mart/Core/widgets/home_search_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -43,7 +44,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            CustomListView(),
+            CustomListView(products: offer),
             SizedBox(height: 28),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -61,7 +62,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            CustomListView(),
+            CustomListView(products: best),
           ],
         ),
       ),

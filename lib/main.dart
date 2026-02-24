@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:green_mart/Core/constants/app_fonts.dart';
-import 'package:green_mart/Features/intro/splash_screen.dart';
+import 'package:green_mart/Features/Main/Main_Screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
         fontFamily: AppFonts.poppins,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: SplashScreen(),
+      home: MainScreen(),
     );
   }
 }
