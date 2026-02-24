@@ -4,6 +4,7 @@ import 'package:green_mart/Core/constants/app_assets.dart';
 import 'package:green_mart/Core/stayels/app_colors.dart';
 import 'package:green_mart/Core/stayels/text_styles.dart';
 import 'package:green_mart/Core/widgets/custom_svg.dart';
+import 'package:green_mart/Features/explore/page/explore.dart';
 import 'package:green_mart/Features/home/pages/home_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -15,7 +16,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int currentindex = 0;
-  List<Widget> screen = [HomeScreen()];
+  List<Widget> screen = [HomeScreen(), Explore()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
