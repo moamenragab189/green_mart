@@ -57,7 +57,10 @@ lib/
 </p>
 <p align="center">
   <img src="screenshots/Home.png" width="250" />
-  
+  <img src="screenshots/Details.png" width="250" />
+</p>
+<p align="center">
+  <img src="screenshots/Explore.png" width="250" />
 </p>
 
 
